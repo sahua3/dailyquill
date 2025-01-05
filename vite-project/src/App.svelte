@@ -13,9 +13,8 @@
 	  });
   
 	  const result = await response.json();
-	  console.log(result); // Log the new post added to the database
+	  console.log(result);
   
-	  // Optionally, reset the form or handle UI update
 	  title = '';
 	  content = '';
 	}
@@ -27,6 +26,10 @@
 	  margin: 5px 0;
 	  padding: 10px;
 	}
+
+  main{
+    background-color: pink;
+  }
   
 	button {
 	  background-color: #4CAF50;
@@ -39,6 +42,10 @@
 	button:hover {
 	  background-color: #45a049;
 	}
+
+  .resizedTitlebox {width: 100px; height: 20px}
+  .resizedContent {width: 300px; height: 500px}
+
   </style>
   
   <main>
@@ -46,11 +53,11 @@
 	<form on:submit|preventDefault={submitPost}>
 	  <div>
 		<label for="title">Title</label>
-		<input type="text" id="title" bind:value={title} required />
+		<input type="text" id="title" class="resizedTitlebox" bind:value={title} required />
 	  </div>
 	  <div>
 		<label for="content">Content</label>
-		<textarea id="content" bind:value={content} rows="5" required></textarea>
+		<input type="text" bind:value={content} class=".resizedContent"required />
 	  </div>
 	  <button type="submit">Submit</button>
 	</form>
