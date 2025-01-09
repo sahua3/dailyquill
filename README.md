@@ -1,5 +1,5 @@
-# blog-app
+# DailyQuill
 
-simple web-based blog application where users can create, edit, and delete posts.
+front-end-dev branch
 
-planned tech stack: vite, svelte, node.js, mongodb
+branch use: getting base project set up, switched from vanilla svelte to sveltekit, potentially will change db as needed
