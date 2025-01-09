@@ -50,12 +50,15 @@
     label {
       display: block;
       margin-top: 10px;
+      font-style: dokdo;
     }
   
     input {
       width: 100%;
       padding: 5px;
       margin-top: 5px;
+      border-radius: 25px;
+      border: 2px solid #73AD21;
     }
   
     button {
