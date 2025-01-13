@@ -6,12 +6,12 @@
     let errorMessage = '';
   
     function handleSubmit() {
-      if (username === '1' && password === '1') {
+      if (username === '1' && password === '1') { //temp password and username
         errorMessage = '';
         alert('Login successful!');
         username = '';
         password = '';
-        goto('/blog-landing');
+        goto('/blog-landing'); //if successful send to /blog-landing
       } else {
         errorMessage = 'Invalid username or password';
       }
