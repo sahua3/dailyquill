@@ -3,21 +3,22 @@
 
     let username = '';
     let password = '';
-    let passwordCheck = '';
+    let passwordCheck = ''; //email stuff
     let email = ''; //will add validation for emails later
     let errorMessage = '';
   
     function handleSubmit() {
-      if (password === passwordCheck) { //make sure username and email arent blank
-        errorMessage = '';
-        alert('Account Created, please log in');
-        username = '';
-        password = '';
-        passwordCheck = '';
-        goto('/login');
-      } else {
-        errorMessage = 'password does not match';
-      }
+        if (password)
+        if (password === passwordCheck) { //make sure username and email arent blank
+            errorMessage = '';
+            alert('Account Created, please log in');
+            username = '';
+            password = '';
+            passwordCheck = '';
+            goto('/login');
+        } else {
+            errorMessage = 'password does not match';
+        }
     }
     function goBack() {
         goto('/', { replaceState: true });

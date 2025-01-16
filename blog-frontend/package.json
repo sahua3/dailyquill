@@ -28,6 +28,7 @@
 	},
 	"dependencies": {
 		"@fontsource/dokdo": "^5.1.1",
-		"@prisma/client": "^6.2.1"
+		"@prisma/client": "^6.2.1",
+		"dexie": "^4.0.10"
 	}
 }
