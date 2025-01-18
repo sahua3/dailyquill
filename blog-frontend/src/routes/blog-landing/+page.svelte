@@ -1,13 +1,14 @@
-<h1>landing page wip</h1>
+<script>
+	let name = "<username>";
+</script>
 
 <main>
+    <header class="title">
+        <h1>Welcome Back {name}</h1>
+    </header>
     <div>
-        <h1>hello</h1>
     </div>
 </main>
 
 <style>
-    main {
-        background-color: pink;
-    }
 </style>
