@@ -1,1 +1,14 @@
-<h1>landing page :3</h1>
+<script>
+	let name = "<username>";
+</script>
+
+<main>
+    <header class="title">
+        <h1>Welcome Back {name}</h1>
+    </header>
+    <div>
+    </div>
+</main>
+
+<style>
+</style>

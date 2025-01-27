@@ -6,12 +6,12 @@
     let errorMessage = '';
   
     function handleSubmit() {
-      if (username === '1' && password === '1') {
+      if (username === '1' && password === '1') { //temp password and username
         errorMessage = '';
         alert('Login successful!');
         username = '';
         password = '';
-        goto('/blog-landing');
+        goto('/blog-landing'); //if successful send to /blog-landing
       } else {
         errorMessage = 'Invalid username or password';
       }
@@ -50,12 +50,15 @@
     label {
       display: block;
       margin-top: 10px;
+      font-style: dokdo;
     }
   
     input {
       width: 100%;
       padding: 5px;
       margin-top: 5px;
+      border-radius: 25px;
+      border: 2px solid #73AD21;
     }
   
     button {
